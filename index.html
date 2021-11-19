@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" rel="stylesheet">
+    <title>uv's website</title>
+</head>
+<body bgcolor="#16161e" style="text-align: center;">
+
+    <style>
+        .a {
+            text-decoration: none;
+        }
+        .wr {
+            border: #fc9a4a solid 2px;
+            background-color: #1a1b26; 
+            color: #f7768e; 
+            font-family: 'Fira Code', monospace; 
+            font-weight: 300; 
+            font-size: 3vh;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 2vh;
+        }
+
+    </style>
+
+<h1 style="color: #f7768e; font-family: 'Fira Code', monospace; font-weight: 500; font-size: 15vh; padding-bottom: 1vh;">&#60;uv&#62;</h1>
+        <h2 style="color: #bb9af7; font-family: 'Fira Code', monospace; font-weight: 300; font-size: 5vh;">Forensics; Web Design; Hardware; Gamer</h2>
+        <br>
+        <a class="wr" href="writeups.html">&nbsp;CTF Writeups&nbsp;</a><br>
+        <a class="wr" href="sites.html">&nbsp;Cool Sites for Cryptic Hunts&nbsp;</a>
+            <br><br><br><br><br><br>
+<footer>
+    <a href="mailto:yuvaanmutreja@gmail.com"><img style="height: 5vh;" src="https://img.icons8.com/material-outlined/48/ffffff/mail.png"/></a>
+    <button style="background-color: #16161e; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden;" id="button" onclick="CopyToClipboard('copyDiv')"><img style="height: 5vh;" src="https://i.ibb.co/Lr2kVFM/416031336060fg6yvuc8i.png"></button>
+<div id="copyDiv"><label style="color:#16161e; font-family: 'Fira Code', monospace;">FRESH Avocado#uv16</label></div>
+</footer>
+<script>
+function CopyToClipboard(containerid) {
+  if (document.selection) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(document.getElementById(containerid));
+    range.select().createTextRange();
+    document.execCommand("copy");
+  } else if (window.getSelection) {
+    var range = document.createRange();
+    range.selectNode(document.getElementById(containerid));
+    window.getSelection().removeAllRanges(range);
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    alert("Copied ID. Now add me :D");
+  }
+}
+</script>
+</body>
+</html>
