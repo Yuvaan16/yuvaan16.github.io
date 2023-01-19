@@ -6,34 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>uv's website</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="refresh"></div>
+    <div class="cligno"></div>
     <div class="box">
       <div class="glass">
         <h1 class="h1">&#60;uv&#62;</h1>
         <br>
-        <p class="h2">Forensics; Web Design; Hardware; Gaming</p>
-        <button class="btn">
-          <a class="btnIn" target="_blank" href="https://open.spotify.com/playlist/3GHIsLColhRsW37S9uGUY0?si=81dd3cb1bb7649ba">&nbsp;Listen to my Playlist&nbsp;</a><br>
-          <a class="btnIn" href="sites.html">&nbsp;Cool Sites for Cryptic Hunts&nbsp;</a><br>
-          <a class="btnIn" href="writeups.html">&nbsp;CTF Writeups&nbsp;</a>
-        </button>
-        <footer>
-          <a href="mailto:yuvaanmutreja@gmail.com"><img style="height: 5vh;" src="https://img.icons8.com/material-outlined/48/ffffff/mail.png" /></a>
-          <button style="background-color: #ffffff00; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden;" id="button" onclick="CopyToClipboard('copyDiv')"><img style="height: 5vh;" src="https://i.ibb.co/Lr2kVFM/416031336060fg6yvuc8i.png"></button>
-          <div style="font-size: 0.001vh;" id="copyDiv"><label style="color:#ffffff00;">FRESH Avocado#uv16</label></div>
-        </footer>
+        <p class="h2 typewriter">Forensics; Web Design; Hardware&nbsp;</p>
+          <br>
+          <div id="a"  onmouseover="chbg1('#80c990')" onmouseout="chbg1('#101010')" class="pointer">
+            <a target="_blank" href="https://open.spotify.com/playlist/3GHIsLColhRsW37S9uGUY0?si=81dd3cb1bb7649ba">
+              <span id="b" class="grt">&nbsp;>&nbsp;</span>
+              <span id="b" class="btnIn">Listen to my playlist</span>
+            </a><br> 
+          </div>
+          <div id="c"  onmouseover="chbg2('#80c990')" onmouseout="chbg2('#101010')" class="pointer">
+            <a href="sites.html">
+              <span id="d" class="grt">&nbsp;>&nbsp;</span>
+              <span id="d" class="btnIn">Cool Sites for Cryptic Hunts</span>
+            </a><br> 
+          </div>
+          <div id="e"  onmouseover="chbg3('#80c990')" onmouseout="chbg3('#101010')" class="pointer">
+            <a href="writeups.html">
+              <span id="f" class="grt">&nbsp;>&nbsp;</span>
+              <span id="f" class="btnIn">CTF Writeups</span>
+            </a><br> 
+          </div>
+          <footer>
+            <a href="mailto:yuvaanmutreja@gmail.com"><img style="height: 5vh;" src="https://img.icons8.com/material-outlined/48/c0c0c0/mail.png" /></a>
+            <button style="background-color: #ffffff00; background-repeat:no-repeat; border: none; cursor:pointer; overflow: hidden;" id="button" onclick="CopyToClipboard('copyDiv')"><img style="height: 5vh; " src="https://i.ibb.co/xSwvwp6/416031336060fg6yvuc8i.png"></button>
+            <div style="font-size: 0.001vh;" id="copyDiv"><label style="color:#ffffff00;">FRESH Avocado#uv16</label></div>
+          </footer>
       </div>
-      <div class="blob"></div>
     </div>
+    
     <script>
-      function CopyToClipboard(e){if(document.selection)(o=document.body.createTextRange()).moveToElementText(document.getElementById(e)),o.select().createTextRange(),document.execCommand("copy");else if(window.getSelection){var o;(o=document.createRange()).selectNode(document.getElementById(e)),window.getSelection().removeAllRanges(o),window.getSelection().addRange(o),document.execCommand("copy"),alert("Copied ID. Now add me :D")}}
+      function CopyToClipboard(e){if(document.selection)(t=document.body.createTextRange()).moveToElementText(document.getElementById(e)),t.select().createTextRange(),document.execCommand("copy");else if(window.getSelection){var t;(t=document.createRange()).selectNode(document.getElementById(e)),window.getSelection().removeAllRanges(t),window.getSelection().addRange(t),document.execCommand("copy"),alert("Copied ID. Now add me :D")}}function chbg1(e){document.getElementById("b").style.color=e}function chbg2(e){document.getElementById("d").style.color=e}function chbg3(e){document.getElementById("f").style.color=e}
     </script>
   </body>
 </html>
