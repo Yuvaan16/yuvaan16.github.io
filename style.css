@@ -2,7 +2,7 @@
     --black: #101010;
     --white: #c0c0c0;
     --pink: #f2a1c2;
-    --green: #f2a1c2
+    --green: #80c990;
 }
 
 * {
@@ -24,7 +24,8 @@ body {
 
 footer {
     text-align: center;
-    padding: 5%
+    padding: 5%;
+    padding-top: 0%;
 }
 
 .a {
@@ -48,12 +49,6 @@ a:-webkit-any-link {
     overflow: hidden
 }
 
-.h1 {
-    margin-bottom: 1rem;
-    color: var(--pink);
-    font-weight: 600;
-    font-size: 10vw;
-}
 
 .h2 {
     color: var(--white);
@@ -221,4 +216,43 @@ body,
     opacity: 0;
     pointer-events: none;
     animation: flicker 0.02s infinite
+}
+.container {
+    display: flex;
+    align-items: center; /* Vertical centering */
+    gap: 20px; /* Space between <uv> and skills */
+    justify-content: space-between;
+}
+
+.h1 {
+    color: var(--pink);
+    font-weight: 600;
+    font-size: 10vw;
+    white-space: nowrap;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 50vw;
+}
+
+.noo {
+    display: inline-block;
+    border: #80c990 1px solid;
+    padding: 8px 12px;
+    color: var(--black);
+    background: #80c990;
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+.center {
+    margin-top: 2%;
+    text-align: center;
+    padding-bottom: 0%;
+}
+#c{
+    margin-bottom: 5%;
 }
